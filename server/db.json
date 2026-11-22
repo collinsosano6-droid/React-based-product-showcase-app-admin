@@ -1,18 +1,17 @@
-
 {
-      "store_info": [
-        {
-            "id": 1,
-            "name": "Merc Jewelry",
-            "tagline": "Jewelry for every occasion",
-            "description": "An independent jewelry house offering rings, necklaces, earrings and bracelets in gold, silver and platinum.",
-            "phone_number": "123-456-789",
-            "email": "info@merc.example",
-            "address": "12 Market Avenue, Nairobi",
-            "hours": "Mon-Fri, 9:00-18:00"
-        }
-    ],
-    "products": [
+  "store_info": [
+    {
+      "id": 1,
+      "name": "Merc Jewelry",
+      "tagline": "Jewelry for every occasion",
+      "description": "An independent jewelry house offering rings, necklaces, earrings and bracelets in gold, silver and platinum.",
+      "phone_number": "123-456-789",
+      "email": "info@merc.example",
+      "address": "12 Market Avenue, Nairobi",
+      "hours": "Mon-Fri, 9:00-18:00"
+    }
+  ],
+  "products": [
     {
       "id": 1,
       "name": "Solitaire Ring",
@@ -135,4 +134,3 @@
     }
   ]
 }
-

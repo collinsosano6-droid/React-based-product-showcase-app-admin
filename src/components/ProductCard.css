@@ -85,7 +85,7 @@
   min-height: 36px;
   padding: 0 14px;
   border-radius: 7px;
-  background: var(--gold);
+  background: beige;
   color: #fff;
   text-decoration: none;
   font-size: 13px;
@@ -93,5 +93,5 @@
 }
 
 .product-card__manage:hover {
-  background: #705416;
+  background: blanchedalmond;
 }
