@@ -163,7 +163,7 @@ function AddProduct({ onAdd }) {
       </div>
 
       <div className="field">
-        <label htmlFor="image">Image</label>
+        <label htmlFor="image">Image URL</label>
         <input
           id="image"
           value={image}
