@@ -1,26 +1,26 @@
 {
-    "store_info": [
-        {
-            "id": 1,
-            "name": "Merc Jewelry",
-            "tagline": "Jewelry for every occasion",
-            "description": "An independent jewelry house offering rings, necklaces, earrings and bracelets in gold, silver and platinum.",
-            "phone_number": "555-5555",
-            "email": "info@merc.example",
-            "address": "12 Market Street, Nairobi",
-            "hours": "Mon-Sat, 9:00-18:00"
-        }
-    ],
-    "products": [
+  "store_info": [
+    {
+      "id": 1,
+      "name": "Merc Jewelry",
+      "tagline": "Jewelry for every occasion",
+      "description": "An independent jewelry house offering rings, necklaces, earrings and bracelets in gold, silver and platinum.",
+      "phone_number": "123-456-789",
+      "email": "info@merc.example",
+      "address": "12 Market Avenue, Nairobi",
+      "hours": "Mon-Fri, 9:00-18:00"
+    }
+  ],
+  "products": [
     {
       "id": 1,
       "name": "Solitaire Ring",
       "description": "Classic round-cut stone with a slim band",
       "category": "Rings",
       "material": "18k Gold",
-      "price": 1250,
+      "price": 2250,
       "stock": 6,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Solitaire+Ring"
+      "image": "/images/solitaire-ring.png"
     },
     {
       "id": 9,
@@ -28,9 +28,9 @@
       "description": "Slim steel case with a brown leather strap",
       "category": "Watches",
       "material": "Stainless Steel",
-      "price": 380,
+      "price": 3380,
       "stock": 10,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Classic+Leather+Watch"
+      "image": "/images/classic-leather-watch.png"
     },
     {
       "id": 5,
@@ -38,9 +38,9 @@
       "description": "Freshwater pearls on delicate hooks",
       "category": "Earrings",
       "material": "Sterling Silver",
-      "price": 180,
+      "price": 1180,
       "stock": 14,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Pearl+Drop+Earrings"
+      "image": "/images/pearl-drop-earrings.png"
     },
     {
       "id": 11,
@@ -48,9 +48,9 @@
       "description": "Polished black onyx in a silver setting",
       "category": "Cufflinks",
       "material": "Sterling Silver",
-      "price": 120,
+      "price": 1020,
       "stock": 15,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Onyx+Square+Cufflinks"
+      "image": "/images/onyx-square-cufflinks.png"
     },
     {
       "id": 3,
@@ -58,9 +58,9 @@
       "description": "Looped pendant on a fine chain",
       "category": "Necklaces",
       "material": "Rose Gold",
-      "price": 420,
+      "price": 1420,
       "stock": 9,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Infinity+Necklace"
+      "image": "/images/infinity-necklace.png"
     },
     {
       "id": 7,
@@ -70,7 +70,7 @@
       "material": "Platinum",
       "price": 2100,
       "stock": 3,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Tennis+Bracelet"
+      "image": "/images/tennis-bracelet.png"
     },
     {
       "id": 6,
@@ -78,9 +78,9 @@
       "description": "Lightweight everyday hoops",
       "category": "Earrings",
       "material": "18k Gold",
-      "price": 340,
+      "price": 1340,
       "stock": 11,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Hoop+Earrings"
+      "image": "/images/hoop-earrings.png"
     },
     {
       "id": 8,
@@ -88,9 +88,9 @@
       "description": "Starter bracelet with three charms",
       "category": "Bracelets",
       "material": "Rose Gold",
-      "price": 275,
+      "price": 2075,
       "stock": 8,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Charm+Bracelet"
+      "image": "/images/charm-bracelet.png"
     },
     {
       "id": 2,
@@ -98,9 +98,9 @@
       "description": "Flat-top ring ready for engraving",
       "category": "Rings",
       "material": "Sterling Silver",
-      "price": 160,
+      "price": 3460,
       "stock": 20,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Signet+Ring"
+      "image": "/images/signet-ring.png"
     },
     {
       "id": 10,
@@ -110,7 +110,7 @@
       "material": "Titanium",
       "price": 1450,
       "stock": 4,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Automatic+Chronograph"
+      "image": "/images/automatic-chronograph.png"
     },
     {
       "id": 4,
@@ -118,9 +118,9 @@
       "description": "Two chains with different lengths",
       "category": "Necklaces",
       "material": "Sterling Silver",
-      "price": 95,
+      "price": 1995,
       "stock": 25,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Layered+Chain+Necklace"
+      "image": "/images/layered-chain-necklace.png"
     },
     {
       "id": 12,
@@ -128,10 +128,9 @@
       "description": "Woven knot design with a polished finish",
       "category": "Cufflinks",
       "material": "18k Gold",
-      "price": 290,
+      "price": 1290,
       "stock": 7,
-      "image": "https://placehold.co/600x600/F3EAD6/5A4410?text=Gold+Knot+Cufflinks"
+      "image": "/images/gold-knot-cufflinks.png"
     }
   ]
-    
 }

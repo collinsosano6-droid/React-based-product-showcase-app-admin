@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const FALLBACK_NAME = "Aurelia Jewelry";
+const FALLBACK_NAME = "Merc Jewelry";
 
 export default function Header({ store }) {
   const name = store?.name ?? FALLBACK_NAME;

@@ -17,7 +17,7 @@ export default function App() {
       <Header store={store} />
       <main className="main">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home  store ={store}loading ={loading} error={error}/>} />
           <Route path="/products" element={<ProductList />} />
           <Route path="/products/new" element={<AddProduct />} />
           <Route path="/products/:id" element={<ProductDetail />} />

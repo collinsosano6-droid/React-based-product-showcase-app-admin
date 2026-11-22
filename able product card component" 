@@ -1,0 +1,64 @@
+[1mdiff --git a/src/components/ProductCard.jsx b/src/components/ProductCard.jsx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2f8a301[m
+[1m--- /dev/null[m
+[1m+++ b/src/components/ProductCard.jsx[m
+[36m@@ -0,0 +1,58 @@[m
+[32m+[m
+[32m+[m[32mimport { Link } from "react-router-dom";[m
+[32m+[m[32mimport "./ProductCard.css";[m
+[32m+[m
+[32m+[m[32mfunction ProductCard({ product }) {[m
+[32m+[m[32m  const isLowStock = Number(product.stock) < 5;[m
+[32m+[m
+[32m+[m[32m  return ([m
+[32m+[m[32m    <article className="product-card">[m
+[32m+[m[32m      <div className="product-card__image-wrapper">[m
+[32m+[m[32m        <img[m
+[32m+[m[32m          src={product.image}[m
+[32m+[m[32m          alt={product.name}[m
+[32m+[m[32m          className="product-card__image"[m
+[32m+[m[32m        />[m
+[32m+[m[32m      </div>[m
+[32m+[m
+[32m+[m[32m      <div className="product-card__content">[m
+[32m+[m[32m        <p className="product-card__category">[m
+[32m+[m[32m          {product.category}[m
+[32m+[m[32m        </p>[m
+[32m+[m
+[32m+[m[32m        <h2 className="product-card__name">[m
+[32m+[m[32m          {product.name}[m
+[32m+[m[32m        </h2>[m
+[32m+[m
+[32m+[m[32m        <p className="product-card__material">[m
+[32m+[m[32m          Material: {product.material}[m
+[32m+[m[32m        </p>[m
+[32m+[m
+[32m+[m[32m        <p className="product-card__price">[m
+[32m+[m[32m          Price: {Number(product.price).toLocaleString()}[m
+[32m+[m[32m        </p>[m
+[32m+[m
+[32m+[m[32m        <div className="product-card__footer">[m
+[32m+[m[32m          <span[m
+[32m+[m[32m            className={`product-card__stock ${[m
+[32m+[m[32m              isLowStock ? "product-card__stock--low" : ""[m
+[32m+[m[32m            }`}[m
+[32m+[m[32m          >[m
+[32m+[m[32m            {isLowStock[m
+[32m+[m[32m              ? "Low stock"[m
+[32m+[m[32m              : `${product.stock} in stock`}[m
+[32m+[m[32m          </span>[m
+[32m+[m
+[32m+[m[32m          <Link[m
+[32m+[m[32m            to={`/products/${product.id}`}[m
+[32m+[m[32m            className="product-card__manage"[m
+[32m+[m[32m          >[m
+[32m+[m[32m            Manage[m
+[32m+[m[32m          </Link>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </article>[m
+[32m+[m[32m  );[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mexport default ProductCard;[m

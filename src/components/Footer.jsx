@@ -8,7 +8,7 @@ export default function Footer({ store, loading, error }) {
       <div className="site-footer__inner">
         <section aria-labelledby="footer-about">
           <h2 id="footer-about" className="site-footer__title">
-            {store?.name ?? "Aurelia Jewelry"}
+            {store?.name ?? "Merc Jewelry"}
           </h2>
           <p>{loading ? "Loading store details..." : store?.tagline}</p>
           {store?.description && <p className="site-footer__muted">{store.description}</p>}
@@ -39,7 +39,7 @@ export default function Footer({ store, loading, error }) {
       </div>
 
       <p className="site-footer__legal">
-        &copy; {year} {store?.name ?? "Aurelia Jewelry"}. All rights reserved.
+        &copy; {year} {store?.name ?? "Merc Jewelry"}. All rights reserved.
       </p>
     </footer>
   );

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
 :root {
   --bg: #fbf9f6;
   --surface: #ffffff;
@@ -8,12 +10,14 @@
   --gold-soft: #f3ead6;
   --footer-bg: #1c1b1a;
   --footer-ink: #ece7df;
-  --font-body: "Inter", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
   --font-display: "Cormorant Garamond", Georgia, serif;
 }
 
+/* Applies consistent sizing to all elements */
 * { box-sizing: border-box; }
 
+/*Sets default styles for the body and text elements */
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -22,6 +26,7 @@ body {
   line-height: 1.6;
 }
 
+/* Sets default styles for headings and links */
 h1, h2 { font-family: var(--font-display); line-height: 1.2; }
 a { color: var(--gold); }
 
@@ -79,3 +84,223 @@ input, textarea, select {
   width: 100%; min-height: 44px; padding: 10px 14px; border: 1px solid #cdbfaf;
   border-radius: 8px; font: inherit; background: #fff;
 }
+
+/* Home Hero */
+.hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  padding: 70px 60px;
+  overflow: hidden;
+  background: #f5eee5;
+  border-radius: 0 0 160px 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 560px;
+}
+
+.hero-content > p:first-child {
+  color: #9b793e;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.hero-content h1 {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 6vw, 64px);
+  color: #29231d;
+  margin: 18px 0;
+}
+
+.hero-content p {
+  color: #62594e;
+  line-height: 1.8;
+}
+
+.hero-content .btn {
+  margin: 20px 12px 0 0;
+}   
+
+/* Shop by Category creates a grid of category buttons for users to browse products by category */
+.categories {
+  padding: 70px 0;
+}
+
+.categories h2 {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 500;
+  text-align: center;
+  color: #29231d;
+  margin-bottom: 35px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.category-grid button {
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #f5eee5;
+  border: 1px solid #e8dccb;
+  border-radius: 12px;
+  color: #72572f;
+  font-family: var(--font-display);
+  font-size: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  padding: 20px;
+  appearance: none;
+}
+
+.category-grid button:hover {
+  transform: translateY(-5px);
+  background: #eee2d1;
+}
+
+/* Show All Button it displays a button that allows users to view all products in the store */
+.show-all-btn {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 10px 28px;
+  min-height: 42px;
+
+  background: transparent;
+  border: 1px solid var(--gold);
+  border-radius: 30px;
+
+  color: var(--gold);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.show-all-btn:hover {
+  background: var(--gold);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
+/* Featured Products styles the section that showcases selected products on the homepage */
+.featured-products {
+  padding: 60px 0 80px;
+}
+
+.featured-products h2 {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 500;
+  text-align: center;
+  color: #29231d;
+  margin-bottom: 35px;
+}
+
+/* Product Grid styles the grid layout for displaying products on the homepage */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+/* Product Card styles the individual product cards within the product grid */
+.product-card {
+  background: #fff;
+  border: 1px solid #e8dccb;
+  border-radius: 12px;
+  padding: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(65, 48, 25, 0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f5eee5;
+}
+
+.product-card h3 {
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 600;
+  margin: 16px 0 8px;
+  color: #29231d;
+}
+
+.product-card p {
+  color: #71675b;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.product-card a {
+  display: inline-block;
+  margin-top: 14px;
+  color: #8a6a1f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.product-card a:hover {
+  text-decoration: underline;
+}
+/* Product detail */
+.breadcrumb { margin: 0 0 24px; }
+.detail {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+.detail__title { font-size: 32px; }
+.detail__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.detail__image--empty {
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  text-align: center;
+  background: linear-gradient(135deg, #f3ead6, #e6d3a6);
+  color: #5a4410;
+  font: 600 32px var(--font-display);
+}
+
+/* Form layout shared with the add-product form */
+.field { margin-bottom: 18px; }
+.two {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.row { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Delete button and messages */
+.btn--danger { background: #fff; color: #a32424; border: 1px solid #d9a5a5; }
+.notice { margin: 0 0 18px; padding: 10px 14px 10px 32px; border-radius: 8px; }
+.notice--error { background: #fbe9e7; color: #8a2b1c; }
+.notice--success { background: #eef3ea; color: #2f5a22; padding-left: 14px; }
